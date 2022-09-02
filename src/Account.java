@@ -1,40 +1,39 @@
 public class Account {
 
-    private String navn;
-    private int saldo;
+    private String name;
+    private int balance;
 
-    public Account(String navn, int saldo) {
-        this.navn = navn;
-        this.saldo = saldo;
+    public Account(String name, int balance) {
+        this.name = this.name;
+        this.balance = balance;
     }
 
-    public Account(String navn)  { // overloaded constructor
-        this.navn = navn;
-        this.saldo = 0;
+    public Account(String name)  { // overloaded constructor
+        this.name = this.name;
+        this.balance = 0;
     }
-
 
     public int deposit(int i){
         if(i >= 0)
         {
-            saldo = saldo + i;
+            balance = balance + i;
         }
-        return saldo;
+        return balance;
     }
 
-    public String getNavn() {
-        return navn;
+    public String getName() {
+        return name;
     }
 
-    public int getSaldo() {
-        return saldo;
+    public int getBalance() {
+        return balance;
     }
 
 
     public int withdraw(int i) {
-        if(i <= saldo && i > 0){
-            saldo = saldo - i;
+        if(i <= balance && i > 0){
+            balance = balance - i;
         }
-        return saldo;
+        return balance;
     }
 }
