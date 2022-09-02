@@ -1,9 +1,7 @@
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AccountTest {
-
     Account account = new Account("malene");
     Account account1 = new Account("palle",100);
 
